@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Wines</title>
+		<!-- Linking to Bootstrap CSS ans JS -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+		<!--Responsive rendering-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Adding the logo to the navigation tab-->
+		<link rel="icon" type="image/x-icon" href="pictures\home\logo.png">
+		<!-- Custom font --!>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Limelight&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+		<!-- Linking my CSS stylesheet -->
+		<link rel="stylesheet" href="style.css"/>
+	</head>
+	<body>
+		<!-- Bootsrap container-fluid class to make the elements stretch over the entire screen -->
+		<div class="container-fluid">
+			<!-- ROW 1: Header containing Logo and navigation bar-->
+			<div class="row"> <!-- Opens row 1 -->
+				<div class="col-lg-3 col-md-3 col-sm-12">
+					<a href="index.html" target="_blank">
+						<img id="logo" src="pictures\home\logo.png" alt="Logo">
+					</a> <!-- Logo with alignment -->
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<nav class="navigation-bar">
+						<ul class="d-flex justify-content-center flex-wrap">
+							<li><a href="about.html">ABOUT US</a></li>
+							<li><a href="wines.html">WINES</a></li>
+							<li><a href="menu.html">MENU</a></li>
+							<li><a href="contact.html">CONTACT US</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-12">
+					<div class="form-booking">
+						<form name="booking">
+							<h5>MAKE A BOOKING</h5><br>
+							<!-- Full Name Field -->
+							<div class="row">
+								<div class="col-lg-6 col-md-6 col-sm-12">
+									<label for="fullname">Full Name:</label><br>
+									<input type="text" id="fullname" name="fullname" style="width: 100%;"><br>
+								</div>
+								<!-- Email Field -->
+								<div class="col-lg-6 col-md-6 col-sm-12">
+									<label for="email">Email:</label><br>
+									<input type="email" id="email" name="email" style="width: 100%;"><br>
+								</div>
+							</div>
+							<!-- Date & Time Field -->
+							<div class="row">
+								<div class="col-lg-6 col-md-6 col-sm-12">
+									<label for="bookingtime">Date & Time:</label><br>
+									<input type="datetime-local" id="bookingtime" name="bookingtime" style="width: 100%;"><br>
+								</div>
+								<!-- Special Requests Field -->
+								<div class="col-lg-6 col-md-6 col-sm-12">
+									<label for="requests">Special Requests:</label><br>
+									<textarea id="requests" name="requests" rows="2" style="width: 100%;"></textarea><br>
+								</div>
+							</div>
+							<!-- Submit Button -->
+							<div>
+								<input type="submit" name="submit" value="Submit">
+							</div>
+						</form>
+					</div>
+				</div>
+			</div> <!-- Closes row 1 -->
+			<!-- ROW 2: Wine Menu-->
+			<div class="row"> <!--Opens row 2-->
+				<div class="col-lg-3 col-md-3 col-sm-3">
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-6">
+					<table>
+					<h1 id=title>Wine list</h1>
+						<tr>
+							<th colspan="4"><div class="custom-WINE-divider"></div>Bubbles</th>
+						</tr>
+						<tr>
+							<td>Albert de Conti</td>
+							<td>Sauvignon Blanc-Chenin</td>
+							<td>Southwest</td>
+							<td class="price">10&euro;</td>
+						</tr>
+						<tr>
+							<td>Maison Antech Cuvee Reserve Brute</td>
+							<td>Mauzac-Chenin-Chardonnay</td>
+							<td>Limoux</td>
+							<td class="price">14&euro;</td>
+						</tr>
+						<tr>
+							<td>Jacky Charpentier Reserve Brute (AOC)</td>
+							<td>Pinot Meunier-Pinot Noire</td>
+							<td>Champagne</td>
+							<td class="price">25&euro;</td>
+						</tr>
+						<tr>
+							<th colspan="4"><div class="custom-WINE-divider"></div>White</th>
+						</tr>
+						<tr>
+							<td>Les Vignes de l'Eglise</td>
+							<td>Vermentino</td>
+							<td>Languedoc</td>
+							<td class="price">9.5&euro;</td>
+						</tr>
+						<tr>
+							<td>Granges des Rocs Monrouby</td>
+							<td>Chardonnay</td>
+							<td>Languedoc</td>
+							<td class="price">10.5&euro;</td>
+						</tr>
+						<tr>
+							<td>Domaine Seguinot</td>
+							<td>Chardonnay</td>
+							<td>Burgundy</td>
+							<td class="price">17.5&euro;</td>
+						</tr>
+						<tr>
+							<td>Bordet, Chablis</td>
+							<td>Sauvignon Blanc-Chenin</td>
+							<td>Southwest</td>
+							<td class="price">10&euro;</td>
+						</tr>
+						<tr>
+							<th colspan="4"><div class="custom-WINE-divider"></div>Rosé wines</th>
+						</tr>
+						<tr>
+							<td>Domaine Horgelus La Vie en Rose</td>
+							<td>Merlot- Tannat- Cabernet Sauvignon</td>
+							<td>Gascogne</td>
+							<td class="price">9.5&euro;</td>
+						</tr>
+						<tr>
+							<th colspan="4"><div class="custom-WINE-divider"></div>Red</th>
+						</tr>
+						<tr>
+							<td>Domaine de Belle Mare Les Granges</td>
+							<td>Grenache-Merlot</td>
+							<td>Languedoc</td>
+							<td class="price">9.5&euro;</td>
+						</tr>
+						<tr>
+							<td>Reserve de l'Aube</td>
+							<td>Syrah-Merlot</td>
+							<td>Languedoc</td>
+							<td class="price">10.5&euro;</td>
+						</tr>
+						<tr>
+							<td>Château de Gaudou Exception</td>
+							<td>Malbec</td>
+							<td>Cahors</td>
+							<td class="price">11&euro;</td>
+						</tr>
+						<tr>
+							<td>Les Terres du Roy</td>
+							<td>Syrah-Grenache-Mourvedre</td>
+							<td>Rhone</td>
+							<td class="price">11.5&euro;</td>
+						</tr>
+						<tr>
+							<td>Châteaux Morin St. Estephe</td>
+							<td>Cabernet Sauvignon-Merlot</td>
+							<td>Bordeaux</td>
+							<td class="price">17&euro;</td>
+						</tr>
+						<tr>
+							<th colspan="4"><div class="custom-WINE-divider"></div>Non-Alcoholic</th>
+						</tr>
+						<tr>
+							<td>Le Petit Etoile</td>
+							<td>Chardonnay Cabernet</td>
+							<td>White</td>
+							<td class="price">5.5&euro;</td>
+						</tr>
+						<tr>
+							<td>Le Petit Etoile</td>
+							<td>Sauvignon</td>
+							<td>Red</td>
+							<td class="price">5.5&euro;</td>
+						</tr>
+						<tr>
+							<th colspan="4"><div class="custom-WINE-divider">Note: All our prices are per glass.</th>
+						</tr>
+					</table>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-3">
+				</div>
+			</div> <!--Closes row 2-->
+			<!--Row 4: Footer-->
+			<div class="row row-footer"> <!--Opens row 4-->
+				<!-- Newsletter Form -->
+				<div id="newsletter" class="col-lg-3 col-md-6 col-sm-12 text-center">
+					<div class="newsletterform">
+						<form name="newsletter">
+							<h3>Newsletter</h3>
+							<h6>Sign up to hear about upcoming menus and events at our location!</h6>
+							<label for="name">Full Name</label><br>
+							<input type="text" id="name" name="name" class="form-control"><br>
+							<label for="email">Email</label><br>
+							<input type="email" id="email" name="email" class="form-control"><br><br>
+							<input type="submit" name="submit" value="Submit" class="btn btn-primary">
+						</form>
+					</div>	
+				</div>
+				<!-- Contact Info -->
+				<div id="contacts" class="col-lg-3 col-md-6 col-sm-12 text-center">
+					<div class="contact-info">
+						<h5>&#9742; (01) 567 2407</h5>
+						<h5>&#9993; info@excusemyfrench.com</h5>
+					</div>
+					<div class="social-icons">
+						<a id="instagram" href="https://www.instagram.com/excusemy.f/" target="_blank">
+							<img src="pictures/home/instagram.png" alt="Instagram">
+						</a>
+						<a id="facebook" href="https://www.facebook.com/excusemyfrenchdublin/" target="_blank">
+							<img src="pictures/home/facebook.png" alt="Facebook">
+						</a>
+					</div>
+				</div>
+				<!-- Opening Hours -->
+				<div id="openinghours" class="col-lg-3 col-md-6 col-sm-12 text-center">
+					<div class="openinghoursbox">
+						<p>Monday&nbsp;&nbsp;10:00-17:00</p>
+						<p>Tuesday&nbsp;&nbsp;CLOSED</p>
+						<p>Wednesday&nbsp;&nbsp;10:00-22:00</p>
+						<p>Thursday&nbsp;&nbsp;10:00-22:00</p>
+						<p>Friday&nbsp;&nbsp;10:00-23:00</p>
+						<p>Saturday&nbsp;&nbsp;10:00-23:00</p>
+						<p>Sunday&nbsp;&nbsp;10:00-22:00</p>
+					</div>
+				</div>
+				<!-- Payment Icons -->
+				<div class="col-lg-3 col-md-6 col-sm-12 text-center">
+					<div class="payment-icons">
+						<img class="payment" src="pictures/home/payment1.png" alt="Visa">
+						<img class="payment" src="pictures/home/payment4.png" alt="MasterCard">
+						<img class="payment" src="pictures/home/payment2.png" alt="Apple Pay">
+						<img class="payment" src="pictures/home/payment3.png" alt="Google Pay">
+					</div>
+					<h6 id="rightsreserved">&#169;2024 Excuse my French. All rights reserved</h6>
+				</div>
+			</div> <!--Closes row 4-->
+		</div> <!--Closes the main container-fluid div-->
+				<!-- Cookie Consent Banner -->
+			<div class="cookieConsent">
+				<p>We use cookies to enhance your browsing experience. By clicking "Accept", you consent to our use of cookies.
+					<button class="acceptCookies">Agree</button> <!-- Accept Button -->
+						<button class="rejectCookies">Reject</button> <!-- Reject Button -->
+				</p>
+			</div>
+		<script src="script.js"></script> <!-- Link to the Javascript file (main.js) -->
+	</body>
+</html>

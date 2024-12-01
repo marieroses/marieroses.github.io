@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Home</title>
+		<!-- Linking to Bootstrap CSS ans JS -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+		<!--Responsive rendering-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Adding the logo to the navigation tab-->
+		<link rel="icon" type="image/x-icon" href="pictures\home\logo.png">
+		<!-- Custom font --!>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Limelight&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+		<!-- Linking my CSS stylesheet -->
+		<link rel="stylesheet" href="style.css"/>
+	</head>
+	<body>
+		<!-- Bootsrap container-fluid class to make the elements stretch over the entire screen -->
+		<div class="container-fluid">
+			<!-- ROW 1: Header containing Logo and navigation bar-->
+			<div class="row"> <!-- Opens row 1 -->
+				<div class="col-lg-3 col-md-3 col-sm-12">
+					<a href="index.html" target="_blank">
+						<img id="logo" src="pictures\home\logo.png" alt="Logo">
+					</a> <!-- Logo with alignment -->
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<nav class="navigation-bar">
+						<ul class="d-flex justify-content-center flex-wrap">
+							<li><a href="about.html">ABOUT US</a></li>
+							<li><a href="wines.html">WINES</a></li>
+							<li><a href="menu.html">MENU</a></li>
+							<li><a href="contact.html">CONTACT US</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-12">
+					<div class="form-booking">
+						<form name="booking">
+							<h5>MAKE A BOOKING</h5><br>
+							<!-- Full Name Field -->
+							<div class="row">
+								<div class="col-lg-6 col-md-6 col-sm-12">
+									<label for="fullname">Full Name:</label><br>
+									<input type="text" id="fullname" name="fullname" style="width: 100%;"><br>
+								</div>
+								<!-- Email Field -->
+								<div class="col-lg-6 col-md-6 col-sm-12">
+									<label for="email">Email:</label><br>
+									<input type="email" id="email" name="email" style="width: 100%;"><br>
+								</div>
+							</div>
+							<!-- Date & Time Field -->
+							<div class="row">
+								<div class="col-lg-6 col-md-6 col-sm-12">
+									<label for="bookingtime">Date & Time:</label><br>
+									<input type="datetime-local" id="bookingtime" name="bookingtime" style="width: 100%;"><br>
+								</div>
+								<!-- Special Requests Field -->
+								<div class="col-lg-6 col-md-6 col-sm-12">
+									<label for="requests">Special Requests:</label><br>
+									<textarea id="requests" name="requests" rows="2" style="width: 100%;"></textarea><br>
+								</div>
+							</div>
+							<!-- Submit Button -->
+							<div>
+								<input type="submit" name="submit" value="Submit">
+							</div>
+						</form>
+					</div>
+				</div>
+			</div> <!-- Closes row 1 -->
+			<!-- ROW 2: Introduction-->
+			<div class="row introduction-row"> <!--Opens row 2, sets special class for intorduction paragraphs-->
+				<div class="col-lg-6 col-md-6 col-sm-6">
+					<h1 id=title>Welcome to Excuse my French!</h1>
+					<div class="custom-divider"></div>
+					<p>
+					Welcome to Excuse My French, where food isn’t just served—it’s celebrated, savored, and maybe even Instagrammed 
+					before the first bite. We’re the ultimate destination for those who believe that flavor should be bold, vibes should 
+					be electric, and dining out should be anything but boring. Our cheeky name says it all—we’re here to flip the script 
+					on traditional dining, delivering creative dishes that will leave you speechless (except for the occasional “OMG, you 
+					have to try this”). Think of us as the love child of culinary genius and a playful sense of humor, with every plate a 
+					work of edible art and every bite a delicious dare.
+					</p>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-6">
+					<p>
+					At Excuse My French, we don’t do boring. Our menu is a mix of wildly 
+					creative flavors and unexpected twists, designed to surprise and maybe even challenge your palate a little. 
+					Forget the rules—this is food for the adventurous, the curious, and the unapologetically hungry. Got a foodie bucket list? 
+					Consider it handled. Whether you’re here for a quick snack, a full-blown feast, or just to soak in the good vibes, we promise 
+					an unforgettable experience. So come hungry, come curious, and most importantly, 
+					come ready to have a good time. We believe in eating well, laughing often, and living unapologetically. Excuse 
+					the French, but don’t excuse the fun—or the flavor.
+					</p>
+				</div>
+			</div> <!--Closes row 2-->
+			<!--Row 3: Slideshow (Bootstrap Carousel)-->
+			<div class="row">
+				<div class="col-12">
+					<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img src="pictures/home/carousel1.png" class="d-block w-100" alt="Slide 1">
+							</div>
+							<div class="carousel-item">
+								<img src="pictures/home/carousel2.png" class="d-block w-100" alt="Slide 2">
+							</div>
+							<div class="carousel-item">
+								<img src="pictures/home/carousel3.png" class="d-block w-100" alt="Slide 3">
+							</div>
+							<div class="carousel-item">
+								<img src="pictures/home/carousel4.png" class="d-block w-100" alt="Slide 4">
+							</div>
+							<div class="carousel-item">
+								<img src="pictures/home/carousel5.png" class="d-block w-100" alt="Slide 5">
+							</div>
+						</div>
+						<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+					</div>
+				</div>
+			</div> <!--Closes row 3-->
+			<!--Row 4: Footer-->
+			<div class="row row-footer"> <!--Opens row 4-->
+				<!-- Newsletter Form -->
+				<div id="newsletter" class="col-lg-3 col-md-6 col-sm-12 text-center">
+					<div class="newsletterform">
+						<form name="newsletter">
+							<h3>Newsletter</h3>
+							<h6>Sign up to hear about upcoming menus and events at our location!</h6>
+							<label for="name">Full Name</label><br>
+							<input type="text" id="name" name="name" class="form-control"><br>
+							<label for="email">Email</label><br>
+							<input type="email" id="email" name="email" class="form-control"><br><br>
+							<input type="submit" name="submit" value="Submit" class="btn btn-primary">
+						</form>
+					</div>	
+				</div>
+				<!-- Contact Info -->
+				<div id="contacts" class="col-lg-3 col-md-6 col-sm-12 text-center">
+					<div class="contact-info">
+						<h5>&#9742; (01) 567 2407</h5>
+						<h5>&#9993; info@excusemyfrench.com</h5>
+					</div>
+					<div class="social-icons">
+						<a id="instagram" href="https://www.instagram.com/excusemy.f/" target="_blank">
+							<img src="pictures/home/instagram.png" alt="Instagram">
+						</a>
+						<a id="facebook" href="https://www.facebook.com/excusemyfrenchdublin/" target="_blank">
+							<img src="pictures/home/facebook.png" alt="Facebook">
+						</a>
+					</div>
+				</div>
+				<!-- Opening Hours -->
+				<div id="openinghours" class="col-lg-3 col-md-6 col-sm-12 text-center">
+					<div class="openinghoursbox">
+						<p>Monday&nbsp;&nbsp;10:00-17:00</p>
+						<p>Tuesday&nbsp;&nbsp;CLOSED</p>
+						<p>Wednesday&nbsp;&nbsp;10:00-22:00</p>
+						<p>Thursday&nbsp;&nbsp;10:00-22:00</p>
+						<p>Friday&nbsp;&nbsp;10:00-23:00</p>
+						<p>Saturday&nbsp;&nbsp;10:00-23:00</p>
+						<p>Sunday&nbsp;&nbsp;10:00-22:00</p>
+					</div>
+				</div>
+				<!-- Payment Icons -->
+				<div class="col-lg-3 col-md-6 col-sm-12 text-center">
+					<div class="payment-icons">
+						<img class="payment" src="pictures/home/payment1.png" alt="Visa">
+						<img class="payment" src="pictures/home/payment4.png" alt="MasterCard">
+						<img class="payment" src="pictures/home/payment2.png" alt="Apple Pay">
+						<img class="payment" src="pictures/home/payment3.png" alt="Google Pay">
+					</div>
+					<h6 id="rightsreserved">&#169;2024 Excuse my French. All rights reserved</h6>
+				</div>
+			</div> <!--Closes row 4-->
+		</div> <!--Closes the main container-fluid div-->
+				<!-- Cookie Consent Banner -->
+			<div class="cookieConsent">
+				<p>We use cookies to enhance your browsing experience. By clicking "Accept", you consent to our use of cookies.
+					<button class="acceptCookies">Agree</button> <!-- Accept Button -->
+						<button class="rejectCookies">Reject</button> <!-- Reject Button -->
+				</p>
+			</div>
+		<script src="script.js"></script> <!-- Link to the Javascript file (main.js) -->
+	</body>
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>About Us</title>
+		<!-- Linking to Bootstrap CSS ans JS -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+		<!--Responsive rendering-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Adding the logo to the navigation tab-->
+		<link rel="icon" type="image/x-icon" href="pictures\home\logo.png">
+		<!-- Custom font --!>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Limelight&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+		<!-- Linking my CSS stylesheet -->
+		<link rel="stylesheet" href="style.css"/>
+	</head>
+	<body>
+		<!-- Bootsrap container-fluid class to make the elements stretch over the entire screen -->
+		<div class="container-fluid">
+			<!-- ROW 1: Header containing Logo and navigation bar-->
+			<div class="row"> <!-- Opens row 1 -->
+				<div class="col-lg-3 col-md-3 col-sm-12">
+					<a href="index.html" target="_blank">
+						<img id="logo" src="pictures\home\logo.png" alt="Logo">
+					</a> <!-- Logo with alignment -->
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<nav class="navigation-bar">
+						<ul class="d-flex justify-content-center flex-wrap">
+							<li><a href="about.html">ABOUT US</a></li>
+							<li><a href="wines.html">WINES</a></li>
+							<li><a href="menu.html">MENU</a></li>
+							<li><a href="contact.html">CONTACT US</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-12">
+					<div class="form-booking">
+						<form name="booking">
+							<h5>MAKE A BOOKING</h5><br>
+							<!-- Full Name Field -->
+							<div class="row">
+								<div class="col-lg-6 col-md-6 col-sm-12">
+									<label for="fullname">Full Name:</label><br>
+									<input type="text" id="fullname" name="fullname" style="width: 100%;"><br>
+								</div>
+								<!-- Email Field -->
+								<div class="col-lg-6 col-md-6 col-sm-12">
+									<label for="email">Email:</label><br>
+									<input type="email" id="email" name="email" style="width: 100%;"><br>
+								</div>
+							</div>
+							<!-- Date & Time Field -->
+							<div class="row">
+								<div class="col-lg-6 col-md-6 col-sm-12">
+									<label for="bookingtime">Date & Time:</label><br>
+									<input type="datetime-local" id="bookingtime" name="bookingtime" style="width: 100%;"><br>
+								</div>
+								<!-- Special Requests Field -->
+								<div class="col-lg-6 col-md-6 col-sm-12">
+									<label for="requests">Special Requests:</label><br>
+									<textarea id="requests" name="requests" rows="2" style="width: 100%;"></textarea><br>
+								</div>
+							</div>
+							<!-- Submit Button -->
+							<div>
+								<input type="submit" name="submit" value="Submit">
+							</div>
+						</form>
+					</div>
+				</div>
+			</div> <!-- Closes row 1 -->
+			<div class="row"> <!--Opens row 2-->
+				<div class="col-lg-3 col-md-3 col-sm-3">
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-2">
+					<img class="personel" src="pictures\about\personel1.png" alt="Adam Arnoult CEO">
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4">
+				<h2>Adam Arnoult - Owner and wine specialist</h2>
+				<div class="custom-divider"></div>
+					<p>
+					Welcome to Excuse my French. I’m Adam Arnoult, a wine specialist and the founder of this space.
+					My journey with wine began years ago, driven by a love for the stories and craftsmanship behind every bottle. Over time, I’ve curated a selection 
+					of exceptional wines from around the world, each chosen for its unique character and quality. Here, I’ve paired these wines with a menu of 
+					French-inspired snacks designed to enhance your experience. Whether it’s a bold red with charcuterie or a crisp white with artisanal bites, 
+					I’m here to help you discover perfect pairings. My vision is to create a warm, welcoming space for wine lovers and curious explorers alike. 
+					Join me for a relaxed evening of fine wine, great food, and the joy of discovery.
+					</p>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-3">
+				</div>
+			</div> <!--Closes row 2-->
+			<!--Row 3: Presentation line 2-->
+			<div class="row"> <!--Opens row 3-->
+				<div class="col-lg-3 col-md-3 col-sm-3">
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4">
+				<h2>Branda Bardot - Waitress</h2>
+				<div class="custom-divider"></div>
+					<p>
+					Hi, I’m Branda Bardot, the friendly face you’ll see serving at Excuse my French. I’ve always loved working in hospitality, 
+					and there’s nothing more rewarding to me than making guests feel truly welcome. With years of experience in the restaurant world, 
+					I enjoy connecting with people and helping them make the most of their visit. Whether it’s recommending the perfect wine to pair 
+					with a dish or simply ensuring everything is just right, I’m here to make your experience as enjoyable as possible. I love sharing 
+					my passion for good food, great wine, and warm service. Whether you’re a regular or it’s your first visit, my goal is to create a 
+					relaxed, memorable atmosphere where you can unwind and savor every moment. I look forward to serving you soon!
+					</p>
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-2">
+					<img class="personel" src="pictures\about\personel2.png" alt="Brenda Bardot Waitress">
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-3">
+				</div>
+			</div> <!--Closes row 3-->
+			<!--Row 4: Presentation line 3-->
+			<div class="row"> <!--Opens row 4-->
+				<div class="col-lg-3 col-md-3 col-sm-3">
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-2">
+					<img class="personel" src="pictures\about\personel3.png" alt="Charles Carlot Chef">
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4">
+				<h2>Charles Carlot - Chef</h2>
+				<div class="custom-divider"></div>
+					<p>
+					Hello, I’m Charles Carlot, the chef behind the flavors at Excuse my French. Cooking has been my passion for as long as I can remember, 
+					and I take pride in creating dishes that bring people joy. With a background rooted in French cuisine, I focus on using fresh, high-quality 
+					ingredients to craft snacks and small plates that pair beautifully with our wine selection. From classic charcuterie boards to inventive bites, 
+					every dish is designed to enhance your dining experience. For me, cooking is about more than just food—it’s about creating moments 
+					of connection and enjoyment. I’m always exploring new ideas to keep the menu exciting while staying true to the rich traditions of French cooking.
+					I hope you’ll join us and let me share my passion for flavorful, carefully crafted dishes with you. Bon appétit!
+					</p>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-3">
+				</div>
+			</div> <!--Closes row 4->
+			<!--Row 5: Presentation line 4-->
+			<div class="row"> <!--Opens row 5-->
+				<div class="col-lg-3 col-md-3 col-sm-3">
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4">
+				<h2>Where do we source our wine?</h2>
+				<div class="custom-divider"></div>
+					<p>
+					Our wines are sourced from small, passionate producers across France, where quality and tradition come first. Twice a year, 
+					we personally visit these vineyards to select only the finest wines, ensuring each bottle reflects the care and craftsmanship 
+					of its maker. We believe in building close relationships with our producers, which allows us to bring you wines with authentic 
+					character and exceptional taste. From sun-soaked Provence to the rolling hills of Burgundy, every trip is a journey of discovery, 
+					tasting, and connection. By choosing wines from small, family-run vineyards, we celebrate the artistry of winemaking and support 
+					those dedicated to their craft. Each bottle tells a story—of the land, the people, and the passion that brought it to life. We’re 
+					proud to share these incredible wines with you, straight from the heart of France to your glass. Cheers to quality, tradition, and 
+					unforgettable flavor!
+					</p>
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-2">
+					<img class="personel" src="pictures\about\winery.png" alt="vineyards">
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-3">
+				</div>
+			</div> <!--Closes row 5->
+			<!--Row 6: Presentation line 5-->
+			<div class="row"> <!--Opens row 6-->
+				<div class="col-lg-3 col-md-3 col-sm-3">
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-2">
+					<img class="personel" src="pictures\about\farmer.png" alt="Farmer with pig">
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4">
+				<h2>Our mission is to source all produce locally</h2>
+				<div class="custom-divider"></div>
+					<p>
+					We take pride in sourcing our meats from professional, carefully selected farmers who share our commitment to quality and ethical 
+					practices. Every piece of meat we serve comes from producers who prioritize the well-being of their animals, ensuring humane care 
+					and sustainable farming methods. Our close relationships with these farmers allow us to guarantee the finest cuts, full of rich flavor 
+					and exceptional quality. We believe that respect for the animals and the land reflects directly in the taste of the food, which is why 
+					we work only with those who uphold these values. From tender pork to other exquisite meats, every product is chosen with care to complement 
+					the wines and dishes we serve. Our goal is to bring you the best, while supporting responsible farming practices that honor tradition and 
+					sustainability. Taste the difference quality makes—crafted with care from farm to table.
+					</p>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-3">
+				</div>
+			</div> <!--Closes row 6->
+			<!--Row 4: Footer-->
+			<div class="row row-footer"> <!--Opens row 4-->
+				<!-- Newsletter Form -->
+				<div id="newsletter" class="col-lg-3 col-md-6 col-sm-12 text-center">
+					<div class="newsletterform">
+						<form name="newsletter">
+							<h3>Newsletter</h3>
+							<h6>Sign up to hear about upcoming menus and events at our location!</h6>
+							<label for="name">Full Name</label><br>
+							<input type="text" id="name" name="name" class="form-control"><br>
+							<label for="email">Email</label><br>
+							<input type="email" id="email" name="email" class="form-control"><br><br>
+							<input type="submit" name="submit" value="Submit" class="btn btn-primary">
+						</form>
+					</div>	
+				</div>
+				<!-- Contact Info -->
+				<div id="contacts" class="col-lg-3 col-md-6 col-sm-12 text-center">
+					<div class="contact-info">
+						<h5>&#9742; (01) 567 2407</h5>
+						<h5>&#9993; info@excusemyfrench.com</h5>
+					</div>
+					<div class="social-icons">
+						<a id="instagram" href="https://www.instagram.com/excusemy.f/" target="_blank">
+							<img src="pictures/home/instagram.png" alt="Instagram">
+						</a>
+						<a id="facebook" href="https://www.facebook.com/excusemyfrenchdublin/" target="_blank">
+							<img src="pictures/home/facebook.png" alt="Facebook">
+						</a>
+					</div>
+				</div>
+				<!-- Opening Hours -->
+				<div id="openinghours" class="col-lg-3 col-md-6 col-sm-12 text-center">
+					<div class="openinghoursbox">
+						<p>Monday&nbsp;&nbsp;10:00-17:00</p>
+						<p>Tuesday&nbsp;&nbsp;CLOSED</p>
+						<p>Wednesday&nbsp;&nbsp;10:00-22:00</p>
+						<p>Thursday&nbsp;&nbsp;10:00-22:00</p>
+						<p>Friday&nbsp;&nbsp;10:00-23:00</p>
+						<p>Saturday&nbsp;&nbsp;10:00-23:00</p>
+						<p>Sunday&nbsp;&nbsp;10:00-22:00</p>
+					</div>
+				</div>
+				<!-- Payment Icons -->
+				<div class="col-lg-3 col-md-6 col-sm-12 text-center">
+					<div class="payment-icons">
+						<img class="payment" src="pictures/home/payment1.png" alt="Visa">
+						<img class="payment" src="pictures/home/payment4.png" alt="MasterCard">
+						<img class="payment" src="pictures/home/payment2.png" alt="Apple Pay">
+						<img class="payment" src="pictures/home/payment3.png" alt="Google Pay">
+					</div>
+					<h6 id="rightsreserved">&#169;2024 Excuse my French. All rights reserved</h6>
+				</div>
+			</div> <!--Closes row 4-->
+		</div> <!--Closes the main container-fluid div-->
+				<!-- Cookie Consent Banner -->
+			<div class="cookieConsent">
+				<p>We use cookies to enhance your browsing experience. By clicking "Accept", you consent to our use of cookies.
+					<button class="acceptCookies">Agree</button> <!-- Accept Button -->
+						<button class="rejectCookies">Reject</button> <!-- Reject Button -->
+				</p>
+			</div>
+		<script src="script.js"></script> <!-- Link to the Javascript file (main.js) -->
+	</body>
+</html>
